@@ -96,7 +96,7 @@ for opt, arg in opts:
 		print ('{1} Using configuration file: {0}'.format(configfile,datetime.datetime.now()))
 		processConfigFile(configfile)
 	if opt in ('-f'):
-		configuration.filter = arg.split('|')
+		configuration.filter = arg.split(',')
 	if opt in ('-h'):
 		if len(arg) > 0:
 			configuration.hideoriginalnames = arg.upper() == 'TRUE'
