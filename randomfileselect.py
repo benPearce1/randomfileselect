@@ -50,7 +50,7 @@ def processConfigFile(configfile):
 def printHelp():
 	print ('python {0} [-i filename | -f filter -m method -s path -o path -c count -h -v]'.format(os.path.basename(__file__)))
 	print ('\t-i file	: input file name')
-	print ('\t-f filter	: file extension filter, pipe(|) delimited list')
+	print ('\t-f filter	: file extension filter, comma delimited list')
 	print ('\t-m method : operation method (copy, zero, list)')
 	print ('\t-h 		: hide original filenames, output will be sequentially numbered files')
 	print ('\t-s path 	: source path')
