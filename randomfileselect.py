@@ -107,7 +107,6 @@ for opt, arg in opts:
 	if opt in ('-s'):
 		if len(sources) == 0:
 			sources.append(RandomDirectorySource())
-		print (arg)
 		sources[0].SourcePath = arg
 	if opt in ('-o'):
 		if len(sources) == 0:
